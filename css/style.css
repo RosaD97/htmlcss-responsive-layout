@@ -160,6 +160,45 @@ MAIN-SECTION 2
     margin-top: 70px;
 }
 
+/************* 
+MAIN-SECTION 3
+**************/
+.text-testimonials{
+    text-align: center;
+}
+.title-testimonials{
+    color: var(--third-color);
+    font-size: 30px;
+    padding: 20px 0;
+}
+.text-testimonials{
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+.testimonial{
+    background-color: var(--third-color);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+.img-testimonials{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 20px 0;
+    object-fit: cover;
+}
+
+.text-testimonial{
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+
+
 
 /************* 
 Tablet Version
@@ -186,6 +225,15 @@ Tablet Version
     .text-application{
         font-size: .875rem;
         line-height: 1.5625rem;
+    }
+
+    .testimonial{
+        flex-direction: row;
+        display: flex;
+    }
+    .box-text{
+        text-align: left;
+        padding: 20px 25px;
     }
 
 }
