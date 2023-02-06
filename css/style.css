@@ -96,12 +96,19 @@ MAIN-SECTION 1
 .row{
     flex-direction: column;
 }
-.col{
+
+.col-uno{
+    padding: 45px 45px 0 45px;
+}
+.col, .col-uno{
     width: 100%;
     background-color: var(--secondary-color);
-    padding: 45px 45px 0 45px;
     border-radius: 25px;
-    margin: 40px auto;
+}
+
+.col{
+    padding: 45px;
+    margin-top: 25px;
 }
 
 .text-application{
@@ -109,9 +116,31 @@ MAIN-SECTION 1
     margin: 30px 0
 }
 
-.img-phone{
-    padding-top: 25px;
+#img-phone{
+   padding-top: 25px;
 }
+
+/************* 
+Tablet Version
+**************/
+@media screen and (min-width: 768px) {
+    .col-uno{
+        width: calc((100% / 3) * 2);
+    }
+    .col{
+        width: calc(100% / 3);
+    }
+    .mini-col-due{
+        text-align: left;
+    }
+    .row{
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: row;
+    }
+
+}
+
 
 
 /************* 
