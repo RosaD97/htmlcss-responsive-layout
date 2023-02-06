@@ -197,6 +197,40 @@ MAIN-SECTION 3
     padding-bottom: 15px;
 }
 
+/************* 
+MAIN-SECTION 4
+**************/
+
+.benefits-section{
+    background-color: var(--third-color);
+    color: #fff;
+}
+
+.benefits{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.title-benefits{
+    font-size: 35px;
+}
+
+.box-benefits{
+    background-color: #fff;
+    color: var(--third-color);
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.number{
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.text-benefits{
+    padding-top: 15px;
+    line-height: 25px;
+}
 
 
 
@@ -235,6 +269,14 @@ Tablet Version
         text-align: left;
         padding: 20px 25px;
     }
+    .box-benefits{
+        width: calc(100% / 2 - 15px);
+    }
+    .box-benefits-big{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 15px;
+    }
 
 }
 
@@ -269,6 +311,9 @@ Desktop Version
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .box-benefits{
+        width: calc(100% / 3 - 15px);
     }
 
 }
