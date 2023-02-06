@@ -104,11 +104,11 @@ MAIN-SECTION 1
     width: 100%;
     background-color: var(--secondary-color);
     border-radius: 25px;
+    margin-top: 25px;
 }
 
 .col{
     padding: 45px;
-    margin-top: 25px;
 }
 
 .text-application{
@@ -119,6 +119,47 @@ MAIN-SECTION 1
 #img-phone{
    padding-top: 25px;
 }
+/************* 
+MAIN-SECTION 2
+**************/
+.planning{
+    background-color: var(--third-color);
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.img-planning-uno{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box-planning{
+    margin: 50px 30px;
+    color: #fff;
+    line-height: 27px;
+}
+
+#title-planning{
+    margin-bottom: 40px;
+    font-size: 2.1875rem;
+}
+
+.box-planning-due{
+    background-color: #fff;
+    color: black;
+    margin: 50px 25px;
+    border-radius: 30px;
+    padding: 25px;
+    text-align: center;
+}
+
+.title-box-planning{
+    padding: 10px 0;
+}
+.col-planning{
+    margin-top: 70px;
+}
+
 
 /************* 
 Tablet Version
@@ -128,15 +169,23 @@ Tablet Version
         width: calc((100% / 3) * 2);
     }
     .col{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 10px);
+        text-align: center;
     }
     .mini-col-due{
-        text-align: left;
+        padding-top: 10px;
+    }
+    #img-phone{
+        width: 65%;
     }
     .row{
         flex-wrap: wrap;
         gap: 10px;
         flex-direction: row;
+    }
+    .text-application{
+        font-size: .875rem;
+        line-height: 1.5625rem;
     }
 
 }
@@ -154,6 +203,25 @@ Desktop Version
     .menu{
         display: none;
     }  
-    
+    .col-uno{
+        display: flex;
+    }
+    #img-phone{
+        width: 100%;
+    }
+    .planning{
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 0 10%;
+    }
+    .box-planning-due{
+        margin-top: 100px;
+    }
+    .col-planning{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
 }
 
