@@ -384,6 +384,10 @@ Desktop Version
     .btn-getS{
         margin: 40px 270px;
     }
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
 }
 
